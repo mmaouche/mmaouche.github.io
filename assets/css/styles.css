@@ -1,26 +1,30 @@
-/* Original typography with slate blue links and copper accents in both themes. */
+/* Original gray and green light palette with separate blue links. */
 :root {
   color-scheme: light;
-  --text: #414854;
-  --heading: #34465d;
-  --muted: #606e7d;
+  --text: #434343;
+  --heading: #545e69;
+  --muted: #666666;
+  --primary: #2d844e;
+  --primary-hover: #23673d;
+  --icon: #3aaa64;
   --link: #365f89;
   --link-hover: #24496d;
-  --accent: #a56545;
-  --accent-text: #975b3e;
-  --line: #dce2e9;
-  --page: #eceef1;
-  --header: #f6f7f9;
+  --accent: #66cb8c;
+  --accent-text: #526d5d;
+  --line: #e8e8e8;
+  --page: #dae3e7;
+  --header: #f5f5f5;
   --panel: #ffffff;
-  --surface-soft: #f3f5f8;
-  --button-hover: #e8eef5;
-  --control-border: #becbda;
-  --panel-border: #b8c7d8;
-  --detail-border: #c7b09f;
-  --venue-bg: #ebf0f6;
-  --venue-text: #365f89;
-  --footer: #2a3645;
-  --footer-text: #ccd3dd;
+  --surface-soft: #f5f8f6;
+  --button-hover: #edf4ef;
+  --control-border: #cbd7cf;
+  --panel-border: #c5d0d6;
+  --detail-border: #ccd9d0;
+  --venue-bg: #eef4f0;
+  --venue-text: #4a6555;
+  --footer: #32383e;
+  --footer-text: #b0b7bf;
+  --footer-link: #b5d0eb;
 }
 * { box-sizing: border-box; }
 html { scroll-padding-top: 24px; }
@@ -54,17 +58,17 @@ h3, h4 { color: var(--heading); font-size: 16px; line-height: 1.5; margin-bottom
   border: 1px solid var(--control-border);
   border-radius: 4px;
   background: var(--panel);
-  color: var(--link);
+  color: var(--primary);
   font: inherit;
   font-size: 13px;
   cursor: pointer;
 }
 .theme-toggle[hidden] { display: none; }
-.theme-toggle:hover { background: var(--button-hover); border-color: var(--link); }
+.theme-toggle:hover { background: var(--button-hover); border-color: var(--primary); color: var(--primary-hover); }
 main.container { padding-top: 30px; }
 .navigation { border-top: 1px solid var(--line); padding: 14px 0; }
 .nav-links { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; font-size: 15px; }
-.nav-links a { color: var(--heading); }
+.nav-links a { color: var(--link); }
 .hero {
   display: grid;
   grid-template-columns: 180px minmax(0, 1fr);
@@ -87,7 +91,7 @@ h1 { color: var(--heading); font-size: 36px; line-height: 1.25; margin-bottom: 8
 .research-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-block: 25px; }
 .research-grid p, .software-grid p { margin-bottom: 0; }
 details { margin-top: 25px; padding-top: 20px; border-top: 1px solid var(--line); }
-summary { color: var(--link); cursor: pointer; font-weight: 700; }
+summary { color: var(--primary); cursor: pointer; font-weight: 700; }
 .detail-content { padding-top: 20px; }
 .detail-content li { margin-bottom: 10px; }
 .publication { margin-bottom: 25px; }
@@ -110,7 +114,7 @@ summary { color: var(--link); cursor: pointer; font-weight: 700; }
 .contact { background: var(--panel); padding: 30px; margin-bottom: 40px; }
 .contact h2 { margin-bottom: 15px; }
 .footer { background: var(--footer); color: var(--footer-text); padding: 20px 30px; font-size: 12px; }
-.footer a { color: #fff; }
+.footer a { color: var(--footer-link); }
 .footer p { margin-bottom: 5px; }
 .skip-link { position: absolute; top: -100px; left: 16px; padding: 10px; background: var(--panel); }
 .skip-link:focus { top: 16px; }
@@ -135,13 +139,13 @@ summary { color: var(--link); cursor: pointer; font-weight: 700; }
   .contact > a { overflow-wrap: anywhere; }
 }
 
-/* Subtle blue surfaces with copper borders and dates. */
+/* Original green section markers, pale surfaces, and subtle borders. */
 .section, .contact {
   border-top: 3px solid var(--panel-border);
   box-shadow: 0 2px 3px rgba(67, 67, 67, .05);
 }
 .section h2 .fa, .contact h2 .fa {
-  color: var(--link);
+  color: var(--icon);
   font-size: 21px;
   width: 28px;
   margin-right: 8px;
@@ -164,6 +168,11 @@ summary { color: var(--link); cursor: pointer; font-weight: 700; }
   width: auto;
   height: 1.35em;
 }
+.logo-filters { position: absolute; pointer-events: none; }
+/* Remove white from the JPEG logos at display time; retain the original files. */
+.institution-logo img[src$=".jpg"],
+.education-logo[src$=".jpg"],
+.teaching-logo[src$=".jpg"] { filter: url(#logo-without-white); }
 .profile-links .fa { width: 16px; text-align: center; }
 .profile-links > a {
   display: inline-flex;
@@ -188,7 +197,7 @@ summary { color: var(--link); cursor: pointer; font-weight: 700; }
   background: var(--surface-soft);
   border-left: 3px solid var(--accent);
 }
-.research-grid h3 .fa { color: var(--link); margin-right: 5px; }
+.research-grid h3 .fa { color: var(--icon); margin-right: 5px; }
 .education-logo, .teaching-logo {
   display: inline-block;
   width: 48px;
@@ -272,40 +281,45 @@ summary { color: var(--link); cursor: pointer; font-weight: 700; }
 .news-item { display: grid; grid-template-columns: 60px minmax(0, 1fr); gap: 18px; padding-bottom: 22px; margin-bottom: 22px; border-bottom: 1px solid var(--line); }
 .news-item:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
 .news-item time { color: var(--accent-text); font-size: 14px; font-weight: 700; }
-.news-item h3 .fa { color: var(--link); margin-right: 6px; }
+.news-item h3 .fa { color: var(--icon); margin-right: 6px; }
 .news-item p { margin: 8px 0 0; }
 @media (max-width: 600px) {
   .news-item { grid-template-columns: 1fr; gap: 6px; }
 }
 
 .nav-links a { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
-.nav-links .fa { color: var(--link); font-size: 14px; width: 16px; text-align: center; }
+.nav-links .fa { color: var(--icon); font-size: 14px; width: 16px; text-align: center; }
 
-/* Both palettes share the same blue links and copper detail accents. */
+/* Deep forest surfaces, sage section markers, and light blue links. */
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --text: #cdd5df;
-  --heading: #dce6f2;
-  --muted: #a9b7c7;
-  --link: #91b8de;
-  --link-hover: #bbd7f1;
-  --accent: #d39b78;
-  --accent-text: #d39b78;
-  --line: #384555;
-  --page: #151b24;
-  --header: #1c2531;
-  --panel: #202a37;
-  --surface-soft: #263343;
-  --button-hover: #30445b;
-  --control-border: #506782;
-  --panel-border: #465c74;
-  --detail-border: #806a5b;
-  --venue-bg: #293d53;
-  --venue-text: #aac9e7;
-  --footer: #111721;
-  --footer-text: #a9b7c7;
+  --text: #d5dfd8;
+  --heading: #e2ece5;
+  --muted: #adbcaf;
+  --primary: #9ac6a9;
+  --icon: #9ac6a9;
+  --primary-hover: #c3e3cd;
+  --link: #9dbde3;
+  --link-hover: #c4daf3;
+  --accent: #bba17b;
+  --accent-text: #d1b28f;
+  --line: #3b4c40;
+  --page: #18221e;
+  --header: #1d2a23;
+  --panel: #233129;
+  --surface-soft: #2a3a30;
+  --button-hover: #344b3c;
+  --control-border: #58725e;
+  --panel-border: #506d59;
+  --detail-border: #7e715b;
+  --venue-bg: #33483a;
+  --venue-text: #c3dcc7;
+  --footer: #121b16;
+  --footer-text: #adbcaf;
+  --footer-link: #9dbde3;
 }
 [data-theme="dark"] .section, [data-theme="dark"] .contact { box-shadow: none; }
-.theme-toggle[aria-pressed="true"] { border-color: var(--link); }
-[data-theme="dark"] .education-logo,
-[data-theme="dark"] .teaching-logo { background: #fff; border-radius: 3px; padding: 2px; }
+.theme-toggle[aria-pressed="true"] { border-color: var(--primary); }
+/* Transparent logos with dark lettering need a light monochrome treatment. */
+[data-theme="dark"] .education-logo[src$="/esi.png"],
+[data-theme="dark"] .teaching-logo[src$="/lille.png"] { filter: brightness(0) invert(.92); }
