@@ -1,0 +1,172 @@
+{
+  "updated": "2026-10-15T13:58:23.496627+00:00",
+  "records": [
+    {
+      "title_s": [
+        "Quantifying privacy risks in foundation model representations of brain MRI"
+      ],
+      "authFullName_s": [
+        "Imen Bajar",
+        "Héber Hwang Arcolezi",
+        "Antoine Boutet",
+        "Carole Frindel",
+        "Mohamed Maouche"
+      ],
+      "arxivId_s": "2610.20494",
+      "publicationDateY_i": 2026
+    },
+    {
+      "title_s": [
+        "Giskard : Byzantine Robust and Confidential Aggregation for Large-Scale Decentralized Learning"
+      ],
+      "authFullName_s": [
+        "Ousmane Touat",
+        "César Sabater",
+        "Mohamed Maouche",
+        "Sonia Ben Mokhtar"
+      ],
+      "arxivId_s": "2606.19129",
+      "publicationDateY_i": 2026
+    },
+    {
+      "title_s": [
+        "DOME: Improving Signal-to-Noise in Stochastic Gradient Descent via Sharp-Direction Subspace Filtering"
+      ],
+      "authFullName_s": [
+        "Julien Nicolas",
+        "Mohamed Maouche",
+        "Sonia Ben Mokhtar",
+        "Mark Coates"
+      ],
+      "arxivId_s": "2507.03545",
+      "publicationDateY_i": 2025
+    },
+    {
+      "title_s": [
+        "GRANITE : a Byzantine-Resilient Dynamic Gossip Learning Framework"
+      ],
+      "authFullName_s": [
+        "Yacine Belal",
+        "Mohamed Maouche",
+        "Sonia Ben Mokhtar"
+      ],
+      "arxivId_s": "2504.17471",
+      "publicationDateY_i": 2025
+    },
+    {
+      "title_s": [
+        "Secure Federated Graph-Filtering for Recommender Systems"
+      ],
+      "authFullName_s": [
+        "Julien Nicolas",
+        "César Sabater",
+        "Mohamed Maouche",
+        "Sonia Ben Mokhtar",
+        "Mark Coates"
+      ],
+      "arxivId_s": "2501.16888",
+      "publicationDateY_i": 2025
+    },
+    {
+      "title_s": [
+        "Exposing the Vulnerability of Decentralized Learning to Membership Inference Attacks Through the Lens of Graph Mixing"
+      ],
+      "authFullName_s": [
+        "Ousmane Touat",
+        "Jezekael Brunon",
+        "Yacine Belal",
+        "Julien Nicolas",
+        "César Sabater",
+        "Mohamed Maouche",
+        "Sonia Ben Mokhtar"
+      ],
+      "arxivId_s": "2412.12837",
+      "publicationDateY_i": 2024
+    },
+    {
+      "title_s": [
+        "Differentially private and decentralized randomized power method"
+      ],
+      "authFullName_s": [
+        "Julien Nicolas",
+        "César Sabater",
+        "Mohamed Maouche",
+        "Sonia Ben Mokhtar",
+        "Mark Coates"
+      ],
+      "arxivId_s": "2411.01931",
+      "publicationDateY_i": 2024
+    },
+    {
+      "title_s": [
+        "Inferring Communities of Interest in Collaborative Learning-based Recommender Systems"
+      ],
+      "authFullName_s": [
+        "Yacine Belal",
+        "Sonia Ben Mokhtar",
+        "Mohamed Maouche",
+        "Anthony Simonet-Boulogne"
+      ],
+      "arxivId_s": "2306.08929",
+      "publicationDateY_i": 2023
+    },
+    {
+      "title_s": [
+        "Differentially Private Speaker Anonymization"
+      ],
+      "authFullName_s": [
+        "Ali Shahin Shamsabadi",
+        "Brij Mohan Lal Srivastava",
+        "Aurélien Bellet",
+        "Nathalie Vauquier",
+        "Emmanuel Vincent",
+        "Mohamed Maouche",
+        "Marc Tommasi",
+        "Nicolas Papernot"
+      ],
+      "arxivId_s": "2202.11823",
+      "publicationDateY_i": 2022
+    },
+    {
+      "title_s": [
+        "The VoicePrivacy 2020 Challenge: Results and findings"
+      ],
+      "authFullName_s": [
+        "Natalia Tomashenko",
+        "Xin Wang",
+        "Emmanuel Vincent",
+        "Jose Patino",
+        "Brij Mohan Lal Srivastava",
+        "Paul-Gauthier Noé",
+        "Andreas Nautsch",
+        "Nicholas Evans",
+        "Junichi Yamagishi",
+        "Benjamin O'Brien",
+        "Anaïs Chanclu",
+        "Jean-François Bonastre",
+        "Massimiliano Todisco",
+        "Mohamed Maouche"
+      ],
+      "arxivId_s": "2109.00648",
+      "publicationDateY_i": 2021,
+      "doiId_s": "10.1016/j.csl.2022.101362"
+    },
+    {
+      "title_s": [
+        "Design Choices for X-vector Based Speaker Anonymization"
+      ],
+      "authFullName_s": [
+        "Brij Mohan Lal Srivastava",
+        "Natalia Tomashenko",
+        "Xin Wang",
+        "Emmanuel Vincent",
+        "Junichi Yamagishi",
+        "Mohamed Maouche",
+        "Aurélien Bellet",
+        "Marc Tommasi"
+      ],
+      "arxivId_s": "2005.08601",
+      "publicationDateY_i": 2020
+    }
+  ]
+}
