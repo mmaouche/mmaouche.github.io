@@ -190,8 +190,22 @@ Converter checks: `python3 -m unittest discover -s tests -v`.
 
 ## Website theme
 
-The header’s **Dark mode** button switches between a light slate blue palette and
-a dark navy palette, both with blue links and copper accents. `assets/js/theme.js` applies the saved
+The header’s **Dark mode** button switches between the original gray and green light
+palette and the deep forest dark palette. Blue remains a separate color for
+hyperlinks in both modes. `assets/js/theme.js` applies the saved
 `maouche-theme` browser preference before rendering; without a saved choice, it
 follows the system theme. The button supports keyboard use, and switching still
 works when browser storage is blocked. The local LaTeX CV is independent of this setting.
+
+## Updating browser assets before publishing
+
+After editing CSS or JavaScript, run:
+
+```sh
+python3 scripts/version_assets.py
+```
+
+This stamps local stylesheet and script URLs in `index.html` with their content hashes.
+Commit the updated HTML together with the changed assets so returning visitors receive
+matching files instead of an older cached stylesheet. Verify with
+`python3 scripts/version_assets.py --check`.
