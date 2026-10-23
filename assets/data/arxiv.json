@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T10:21:17.458978+00:00",
+  "updated": "2026-10-23T10:16:15.774239+00:00",
   "records": [
     {
       "title_s": [
@@ -17,7 +17,7 @@
     },
     {
       "title_s": [
-        "Giskard : Byzantine Robust and Confidential Aggregation for Large-Scale Decentralized Learning"
+        "Giskard : Byzantine Robust and Private Aggregation for Large-Scale Decentralized Learning"
       ],
       "authFullName_s": [
         "Ousmane Touat",
